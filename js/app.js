@@ -5452,3 +5452,78 @@ function initializeApp() {
 
 
 initializeApp();
+
+/* =========================================================
+   MOBILE SIDEBAR FIX
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menuButton =
+        document.getElementById("mobile-menu-btn");
+
+    const sidebar =
+        document.querySelector(".sidebar");
+
+    const overlay =
+        document.getElementById("mobile-sidebar-overlay");
+
+    if (!menuButton || !sidebar) return;
+
+    function openMenu() {
+        sidebar.classList.add("mobile-open");
+
+        if (overlay) {
+            overlay.classList.add("mobile-open");
+        }
+
+        document.body.classList.add("mobile-menu-active");
+    }
+
+    function closeMenu() {
+        sidebar.classList.remove("mobile-open");
+
+        if (overlay) {
+            overlay.classList.remove("mobile-open");
+        }
+
+        document.body.classList.remove("mobile-menu-active");
+    }
+
+    menuButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (sidebar.classList.contains("mobile-open")) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+
+    if (overlay) {
+        overlay.addEventListener("click", closeMenu);
+    }
+
+    /* Close after selecting a navigation item */
+    sidebar.addEventListener("click", function (event) {
+
+        const navItem =
+            event.target.closest(".nav-item");
+
+        if (navItem) {
+            closeMenu();
+        }
+
+    });
+
+    /* Close with Escape */
+    document.addEventListener("keydown", function (event) {
+
+        if (event.key === "Escape") {
+            closeMenu();
+        }
+
+    });
+
+});
