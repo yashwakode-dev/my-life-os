@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,1632 +12,1176 @@
 
 <body>
 
-<div class="app">
+    <div class="app">
 
-    <!-- ================= SIDEBAR ================= -->
+        <!-- ================= SIDEBAR ================= -->
 
-    <aside class="sidebar">
-
-        <div class="brand">
-            <div class="brand-logo">L</div>
-
-            <div>
-                <h2>My Life OS</h2>
-                <span>Personal Command Center</span>
-            </div>
-        </div>
-
-        <nav class="navigation">
-
-            <button class="nav-item active" data-page="dashboard">
-                <span>⌂</span>
-                Dashboard
-            </button>
-
-            <button class="nav-item" data-page="goals">
-                <span>🎯</span>
-                Goals
-            </button>
-
-            <button class="nav-item" data-page="habits">
-                <span>🔥</span>
-                Habits
-            </button>
-
-            <button class="nav-item" data-page="student">
-                <span>📚</span>
-                Student
-            </button>
-
-            <button class="nav-item" data-page="career">
-                <span>💻</span>
-                IT Career
-            </button>
-
-            <button class="nav-item" data-page="roadmaps">
-                <span>🗺️</span>
-                Roadmaps
-            </button>
-
-            <button class="nav-item" data-page="japan">
-                <span>🇯🇵</span>
-                Japan Dream
-            </button>
-
-            <button class="nav-item" data-page="learning">
-                <span>🧠</span>
-                Learning
-            </button>
-
-            <button class="nav-item" data-page="projects">
-                <span>🚀</span>
-                Projects
-            </button>
-
-            <button class="nav-item" data-page="calendar">
-                <span>📅</span>
-                Calendar
-            </button>
-
-            <button class="nav-item" data-page="progress">
-                <span>📈</span>
-                Progress
-            </button>
-
-            <button class="nav-item" data-page="achievements">
-                <span>🏆</span>
-                Achievements
-            </button>
-
-            <button class="nav-item" data-page="settings">
-                <span>⚙️</span>
-                Settings
-            </button>
-
-        </nav>
-
-        <div class="sidebar-bottom">
-
-            <div class="mini-profile">
-                <div class="avatar">Y</div>
-
-                <div>
-                    <strong id="sidebar-name">Yash</strong>
-                    <span>IT Student</span>
-                </div>
-            </div>
-
-        </div>
-
-    </aside>
-
-
-    <!-- ================= MAIN ================= -->
-
-    <main class="main">
-
-        <!-- MOBILE TOP -->
-
-        <div class="mobile-header">
+        <aside class="sidebar">
 
             <div class="brand">
                 <div class="brand-logo">L</div>
 
                 <div>
                     <h2>My Life OS</h2>
+                    <span>Personal Command Center</span>
                 </div>
             </div>
 
-        </div>
+            <nav class="navigation">
+
+                <button class="nav-item active" data-page="dashboard">
+                    <span>⌂</span>
+                    Dashboard
+                </button>
+
+                <button class="nav-item" data-page="goals">
+                    <span>🎯</span>
+                    Goals
+                </button>
+
+                <button class="nav-item" data-page="habits">
+                    <span>🔥</span>
+                    Habits
+                </button>
+
+                <button class="nav-item" data-page="student">
+                    <span>📚</span>
+                    Student
+                </button>
+
+                <button class="nav-item" data-page="career">
+                    <span>💻</span>
+                    IT Career
+                </button>
+
+                <button class="nav-item" data-page="roadmaps">
+                    <span>🗺️</span>
+                    Roadmaps
+                </button>
+
+                <button class="nav-item" data-page="japan">
+                    <span>🇯🇵</span>
+                    Japan Dream
+                </button>
+
+                <button class="nav-item" data-page="learning">
+                    <span>🧠</span>
+                    Learning
+                </button>
+
+                <button class="nav-item" data-page="projects">
+                    <span>🚀</span>
+                    Projects
+                </button>
+
+                <button class="nav-item" data-page="calendar">
+                    <span>📅</span>
+                    Calendar
+                </button>
+
+                <button class="nav-item" data-page="progress">
+                    <span>📈</span>
+                    Progress
+                </button>
+
+                <button class="nav-item" data-page="achievements">
+                    <span>🏆</span>
+                    Achievements
+                </button>
+
+                <button class="nav-item" data-page="settings">
+                    <span>⚙️</span>
+                    Settings
+                </button>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+
+                <div class="mini-profile">
+                    <div class="avatar">Y</div>
+
+                    <div>
+                        <strong id="sidebar-name">Yash</strong>
+                        <span>IT Student</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </aside>
 
 
-        <!-- =====================================================
+        <!-- ================= MAIN ================= -->
+
+        <main class="main">
+
+            <!-- MOBILE TOP -->
+
+            <div class="mobile-header">
+
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open navigation" type="button">
+                    ☰
+                </button>
+
+                <div class="brand">
+                    <div class="brand-logo">L</div>
+
+                    <div>
+                        <h2>My Life OS</h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mobile-sidebar-overlay" id="mobile-sidebar-overlay"></div>
+
+
+            <!-- =====================================================
              DASHBOARD
         ====================================================== -->
 
-        <section class="page active" id="dashboard">
+            <section class="page active" id="dashboard">
 
-            <div class="page-header dashboard-header">
-
-                <div>
-                    <span class="eyebrow">PERSONAL COMMAND CENTER</span>
-
-                    <h1>
-                        Welcome back, <span id="dashboard-name">Yash</span> 👋
-                    </h1>
-
-                    <p id="dashboard-date">
-                        Loading today's date...
-                    </p>
-                </div>
-
-                <button class="primary-btn" data-goto="goals">
-                    + New Goal
-                </button>
-
-            </div>
-
-
-            <!-- TODAY COMMAND CENTER -->
-
-            <div class="today-banner">
-
-                <div class="today-main">
-
-                    <div class="today-icon">
-                        ⚡
-                    </div>
+                <div class="page-header dashboard-header">
 
                     <div>
-                        <span class="eyebrow">TODAY'S COMMAND CENTER</span>
+                        <span class="eyebrow">PERSONAL COMMAND CENTER</span>
 
-                        <h2 id="today-focus-title">
-                            Build your future one day at a time.
-                        </h2>
+                        <h1>
+                            Welcome back, <span id="dashboard-name">Yash</span> 👋
+                        </h1>
 
-                        <p id="today-focus-text">
-                            Complete your important tasks, maintain your habits,
-                            and keep moving toward your long-term goals.
+                        <p id="dashboard-date">
+                            Loading today's date...
+                        </p>
+                    </div>
+
+                    <button class="primary-btn" data-goto="goals">
+                        + New Goal
+                    </button>
+
+                </div>
+
+
+                <!-- TODAY COMMAND CENTER -->
+
+                <div class="today-banner">
+
+                    <div class="today-main">
+
+                        <div class="today-icon">
+                            ⚡
+                        </div>
+
+                        <div>
+                            <span class="eyebrow">TODAY'S COMMAND CENTER</span>
+
+                            <h2 id="today-focus-title">
+                                Build your future one day at a time.
+                            </h2>
+
+                            <p id="today-focus-text">
+                                Complete your important tasks, maintain your habits,
+                                and keep moving toward your long-term goals.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="today-score">
+
+                        <span>Today's Score</span>
+
+                        <strong id="today-score">0%</strong>
+
+                        <div class="progress-track">
+                            <div class="progress-fill" id="today-score-bar" style="width:0%">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STAT CARDS -->
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+                        <div class="stat-icon purple">🎯</div>
+
+                        <div>
+                            <span>Active Goals</span>
+                            <strong id="dashboard-goal-count">0</strong>
+                        </div>
+                    </div>
+
+
+                    <div class="stat-card">
+                        <div class="stat-icon orange">🔥</div>
+
+                        <div>
+                            <span>Habit Completion</span>
+                            <strong id="dashboard-habit-today">0%</strong>
+                        </div>
+                    </div>
+
+
+                    <div class="stat-card">
+                        <div class="stat-icon blue">📚</div>
+
+                        <div>
+                            <span>Study Progress</span>
+                            <strong id="dashboard-study-progress">0%</strong>
+                        </div>
+                    </div>
+
+
+                    <div class="stat-card">
+                        <div class="stat-icon green">💻</div>
+
+                        <div>
+                            <span>IT Career</span>
+                            <strong id="dashboard-career-progress">0%</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- MAIN GRID -->
+
+                <div class="dashboard-grid">
+
+
+                    <!-- TODAY TASKS -->
+
+                    <div class="card large-card">
+
+                        <div class="card-header">
+
+                            <div>
+                                <span class="eyebrow">TODAY</span>
+                                <h2>Today's Tasks</h2>
+                            </div>
+
+                            <button class="text-btn" data-goto="student">
+                                View all
+                            </button>
+
+                        </div>
+
+                        <div id="dashboard-tasks" class="task-list">
+                        </div>
+
+                        <div class="empty-state small" id="dashboard-task-empty">
+                            <span>✨</span>
+                            <p>No tasks for today.</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- HABITS -->
+
+                    <div class="card">
+
+                        <div class="card-header">
+
+                            <div>
+                                <span class="eyebrow">CONSISTENCY</span>
+                                <h2>Today's Habits</h2>
+                            </div>
+
+                            <button class="text-btn" data-goto="habits">
+                                Manage
+                            </button>
+
+                        </div>
+
+                        <div id="dashboard-habits">
+                        </div>
+
+                    </div>
+
+
+                    <!-- GOALS -->
+
+                    <div class="card">
+
+                        <div class="card-header">
+
+                            <div>
+                                <span class="eyebrow">DIRECTION</span>
+                                <h2>Goals</h2>
+                            </div>
+
+                            <button class="text-btn" data-goto="goals">
+                                Manage
+                            </button>
+
+                        </div>
+
+                        <div id="dashboard-goals">
+                        </div>
+
+                    </div>
+
+
+                    <!-- IT CAREER -->
+
+                    <div class="card career-dashboard-card">
+
+                        <div class="card-header">
+
+                            <div>
+                                <span class="eyebrow">FUTURE</span>
+                                <h2>IT Career Path</h2>
+                            </div>
+
+                            <button class="text-btn" data-goto="career">
+                                Open
+                            </button>
+
+                        </div>
+
+                        <div class="career-progress-big">
+
+                            <strong id="dashboard-career-big">
+                                0%
+                            </strong>
+
+                            <span>Career readiness</span>
+
+                        </div>
+
+                        <div class="progress-track">
+                            <div class="progress-fill" id="dashboard-career-bar" style="width:0%">
+                            </div>
+                        </div>
+
+                        <p class="muted">
+                            Build programming, DSA, CS fundamentals,
+                            projects and career skills.
+                        </p>
+
+                    </div>
+
+
+                    <!-- UPCOMING EVENTS -->
+
+                    <div class="card">
+
+                        <div class="card-header">
+
+                            <div>
+                                <span class="eyebrow">SCHEDULE</span>
+                                <h2>Upcoming</h2>
+                            </div>
+
+                            <button class="text-btn" data-goto="calendar">
+                                Calendar
+                            </button>
+
+                        </div>
+
+                        <div id="dashboard-events">
+                        </div>
+
+                    </div>
+
+
+                    <!-- WEEKLY OVERVIEW -->
+
+                    <div class="card large-card">
+
+                        <div class="card-header">
+
+                            <div>
+                                <span class="eyebrow">CONSISTENCY</span>
+                                <h2>Weekly Overview</h2>
+                            </div>
+
+                        </div>
+
+                        <div class="weekly-bars" id="weekly-bars">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- QUICK ACTIONS -->
+
+                <div class="card quick-actions-card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <span class="eyebrow">SHORTCUTS</span>
+                            <h2>Quick Actions</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="quick-actions">
+
+                        <button data-goto="goals">
+                            <span>🎯</span>
+                            Add Goal
+                        </button>
+
+                        <button data-goto="habits">
+                            <span>🔥</span>
+                            Add Habit
+                        </button>
+
+                        <button data-goto="student">
+                            <span>📚</span>
+                            Study
+                        </button>
+
+                        <button data-goto="projects">
+                            <span>🚀</span>
+                            New Project
+                        </button>
+
+                        <button data-goto="calendar">
+                            <span>📅</span>
+                            Add Event
+                        </button>
+
+                        <button data-goto="career">
+                            <span>💻</span>
+                            Career Checklist
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+            <!-- =====================================================
+             GOALS
+        ====================================================== -->
+
+            <section class="page" id="goals">
+
+                <div class="page-header">
+
+                    <div>
+                        <span class="eyebrow">DIRECTION & PURPOSE</span>
+                        <h1>Goals</h1>
+                        <p>Turn big ambitions into measurable actions.</p>
+                    </div>
+
+                    <button class="primary-btn" id="open-goal-form">
+                        + Create Goal
+                    </button>
+
+                </div>
+
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+                        <div class="stat-icon purple">🎯</div>
+                        <div>
+                            <span>Total Goals</span>
+                            <strong id="goal-total">0</strong>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon blue">🚀</div>
+                        <div>
+                            <span>In Progress</span>
+                            <strong id="goal-progress-count">0</strong>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon green">🏆</div>
+                        <div>
+                            <span>Completed</span>
+                            <strong id="goal-completed-count">0</strong>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon orange">📊</div>
+                        <div>
+                            <span>Average Progress</span>
+                            <strong id="goal-average-progress">0%</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="form-card hidden" id="goal-form-card">
+
+                    <div class="card-header">
+                        <div>
+                            <span class="eyebrow">NEW GOAL</span>
+                            <h2>Create a meaningful goal</h2>
+                        </div>
+                    </div>
+
+                    <form id="goal-form">
+
+                        <div class="form-grid">
+
+                            <div class="input-group full">
+                                <label>Goal name</label>
+                                <input type="text" id="goal-name" placeholder="Example: Build my portfolio website"
+                                    required>
+                            </div>
+
+                            <div class="input-group">
+                                <label>Category</label>
+
+                                <select id="goal-category">
+                                    <option>Career</option>
+                                    <option>Education</option>
+                                    <option>Health</option>
+                                    <option>Personal</option>
+                                    <option>Finance</option>
+                                    <option>Japan</option>
+                                    <option>Projects</option>
+                                </select>
+                            </div>
+
+                            <div class="input-group">
+                                <label>Priority</label>
+
+                                <select id="goal-priority">
+                                    <option>High</option>
+                                    <option selected>Medium</option>
+                                    <option>Low</option>
+                                </select>
+                            </div>
+
+                            <div class="input-group">
+                                <label>Deadline</label>
+                                <input type="date" id="goal-deadline">
+                            </div>
+
+                            <div class="input-group">
+                                <label>Why does this matter?</label>
+                                <input type="text" id="goal-why" placeholder="Why is this important to you?">
+                            </div>
+
+                            <div class="input-group full">
+                                <label>Next action</label>
+                                <input type="text" id="goal-next-action"
+                                    placeholder="What is the next physical action?">
+                            </div>
+
+                        </div>
+
+                        <div class="form-actions">
+
+                            <button type="button" class="secondary-btn" id="cancel-goal-form">
+                                Cancel
+                            </button>
+
+                            <button type="submit" class="primary-btn">
+                                Create Goal
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+                <div class="section-title">
+                    <h2>Your Goals</h2>
+                    <span id="goals-count-label">0 goals</span>
+                </div>
+
+                <div id="goals-list" class="goals-grid">
+                </div>
+
+            </section>
+
+
+            <!-- =====================================================
+             HABITS
+        ====================================================== -->
+
+            <section class="page" id="habits">
+
+                <div class="page-header">
+
+                    <div>
+                        <span class="eyebrow">DAILY SYSTEM</span>
+                        <h1>Habit Tracker</h1>
+                        <p>Small actions repeated consistently create big changes.</p>
+                    </div>
+
+                    <button class="primary-btn" id="open-habit-form">
+                        + Create Habit
+                    </button>
+
+                </div>
+
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+                        <div class="stat-icon orange">🔥</div>
+                        <div>
+                            <span>Total Habits</span>
+                            <strong id="habit-total">0</strong>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon green">✓</div>
+                        <div>
+                            <span>Today's Completion</span>
+                            <strong id="habit-today">0%</strong>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon purple">🏆</div>
+                        <div>
+                            <span>Best Streak</span>
+                            <strong id="best-streak">0</strong>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon blue">📅</div>
+                        <div>
+                            <span>Weekly Consistency</span>
+                            <strong id="habit-weekly">0%</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="form-card hidden" id="habit-form-card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <span class="eyebrow">NEW HABIT</span>
+                            <h2>Build a better routine</h2>
+                        </div>
+
+                    </div>
+
+                    <form id="habit-form">
+
+                        <div class="form-grid">
+
+                            <div class="input-group full">
+                                <label>Habit name</label>
+
+                                <input type="text" id="habit-name" placeholder="Example: Study DSA for 45 minutes"
+                                    required>
+                            </div>
+
+                            <div class="input-group">
+                                <label>Category</label>
+
+                                <select id="habit-category">
+                                    <option>Study</option>
+                                    <option>Health</option>
+                                    <option>Career</option>
+                                    <option>Productivity</option>
+                                    <option>Mindset</option>
+                                    <option>Personal</option>
+                                </select>
+                            </div>
+
+                            <div class="input-group">
+                                <label>Target</label>
+
+                                <select id="habit-target">
+                                    <option value="daily">Every day</option>
+                                    <option value="weekdays">Weekdays</option>
+                                    <option value="3">3 days/week</option>
+                                    <option value="5">5 days/week</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="form-actions">
+
+                            <button type="button" class="secondary-btn" id="cancel-habit-form">
+                                Cancel
+                            </button>
+
+                            <button type="submit" class="primary-btn">
+                                Create Habit
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+                <div class="habit-table-wrapper">
+
+                    <div id="habits-list">
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================================================
+             STUDENT
+        ====================================================== -->
+
+            <section class="page" id="student">
+
+                <div class="page-header">
+
+                    <div>
+                        <span class="eyebrow">STUDENT OS</span>
+                        <h1>Student Center</h1>
+                        <p>Manage study, assignments, subjects and exams.</p>
+                    </div>
+
+                    <button class="primary-btn" id="open-study-form">
+                        + Add Study Session
+                    </button>
+
+                </div>
+
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+                        <div class="stat-icon blue">📚</div>
+                        <div>
+                            <span>Subjects</span>
+                            <strong id="subject-count">0</strong>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon purple">⏱️</div>
+                        <div>
+                            <span>Study Hours</span>
+                            <strong id="study-hours">0h</strong>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon orange">📝</div>
+                        <div>
+                            <span>Assignments</span>
+                            <strong id="assignment-count">0</strong>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon green">🎓</div>
+                        <div>
+                            <span>Academic Progress</span>
+                            <strong id="academic-progress">0%</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="student-grid">
+
+                    <div class="card">
+
+                        <div class="card-header">
+
+                            <div>
+                                <span class="eyebrow">ACADEMICS</span>
+                                <h2>Subjects</h2>
+                            </div>
+
+                            <button class="text-btn" id="add-subject-btn">
+                                + Add
+                            </button>
+
+                        </div>
+
+                        <div id="subjects-list">
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <div class="card-header">
+
+                            <div>
+                                <span class="eyebrow">DEADLINES</span>
+                                <h2>Assignments</h2>
+                            </div>
+
+                            <button class="text-btn" id="add-assignment-btn">
+                                + Add
+                            </button>
+
+                        </div>
+
+                        <div id="assignments-list">
+                        </div>
+
+                    </div>
+
+
+                    <div class="card large-card">
+
+                        <div class="card-header">
+
+                            <div>
+                                <span class="eyebrow">STUDY LOG</span>
+                                <h2>Study Sessions</h2>
+                            </div>
+
+                        </div>
+
+                        <div id="study-sessions-list">
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <div class="card-header">
+
+                            <div>
+                                <span class="eyebrow">EXAM PREPARATION</span>
+                                <h2>Exams</h2>
+                            </div>
+
+                            <button class="text-btn" id="add-exam-btn">
+                                + Add
+                            </button>
+
+                        </div>
+
+                        <div id="exams-list">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================================================
+             IT CAREER
+        ====================================================== -->
+
+            <section class="page" id="career">
+
+                <div class="page-header">
+
+                    <div>
+                        <span class="eyebrow">CAREER DEVELOPMENT</span>
+                        <h1>IT Career Builder</h1>
+                        <p>
+                            Build the skills that turn an IT student into a
+                            strong developer candidate.
                         </p>
                     </div>
 
                 </div>
 
-                <div class="today-score">
 
-                    <span>Today's Score</span>
-
-                    <strong id="today-score">0%</strong>
-
-                    <div class="progress-track">
-                        <div
-                            class="progress-fill"
-                            id="today-score-bar"
-                            style="width:0%">
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- STAT CARDS -->
-
-            <div class="stats-grid">
-
-                <div class="stat-card">
-                    <div class="stat-icon purple">🎯</div>
+                <div class="career-hero card">
 
                     <div>
-                        <span>Active Goals</span>
-                        <strong id="dashboard-goal-count">0</strong>
-                    </div>
-                </div>
 
+                        <span class="eyebrow">
+                            YOUR CAREER READINESS
+                        </span>
 
-                <div class="stat-card">
-                    <div class="stat-icon orange">🔥</div>
-
-                    <div>
-                        <span>Habit Completion</span>
-                        <strong id="dashboard-habit-today">0%</strong>
-                    </div>
-                </div>
-
-
-                <div class="stat-card">
-                    <div class="stat-icon blue">📚</div>
-
-                    <div>
-                        <span>Study Progress</span>
-                        <strong id="dashboard-study-progress">0%</strong>
-                    </div>
-                </div>
-
-
-                <div class="stat-card">
-                    <div class="stat-icon green">💻</div>
-
-                    <div>
-                        <span>IT Career</span>
-                        <strong id="dashboard-career-progress">0%</strong>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- MAIN GRID -->
-
-            <div class="dashboard-grid">
-
-
-                <!-- TODAY TASKS -->
-
-                <div class="card large-card">
-
-                    <div class="card-header">
-
-                        <div>
-                            <span class="eyebrow">TODAY</span>
-                            <h2>Today's Tasks</h2>
-                        </div>
-
-                        <button
-                            class="text-btn"
-                            data-goto="student">
-                            View all
-                        </button>
-
-                    </div>
-
-                    <div id="dashboard-tasks" class="task-list">
-                    </div>
-
-                    <div class="empty-state small" id="dashboard-task-empty">
-                        <span>✨</span>
-                        <p>No tasks for today.</p>
-                    </div>
-
-                </div>
-
-
-                <!-- HABITS -->
-
-                <div class="card">
-
-                    <div class="card-header">
-
-                        <div>
-                            <span class="eyebrow">CONSISTENCY</span>
-                            <h2>Today's Habits</h2>
-                        </div>
-
-                        <button
-                            class="text-btn"
-                            data-goto="habits">
-                            Manage
-                        </button>
-
-                    </div>
-
-                    <div id="dashboard-habits">
-                    </div>
-
-                </div>
-
-
-                <!-- GOALS -->
-
-                <div class="card">
-
-                    <div class="card-header">
-
-                        <div>
-                            <span class="eyebrow">DIRECTION</span>
-                            <h2>Goals</h2>
-                        </div>
-
-                        <button
-                            class="text-btn"
-                            data-goto="goals">
-                            Manage
-                        </button>
-
-                    </div>
-
-                    <div id="dashboard-goals">
-                    </div>
-
-                </div>
-
-
-                <!-- IT CAREER -->
-
-                <div class="card career-dashboard-card">
-
-                    <div class="card-header">
-
-                        <div>
-                            <span class="eyebrow">FUTURE</span>
-                            <h2>IT Career Path</h2>
-                        </div>
-
-                        <button
-                            class="text-btn"
-                            data-goto="career">
-                            Open
-                        </button>
-
-                    </div>
-
-                    <div class="career-progress-big">
-
-                        <strong id="dashboard-career-big">
+                        <h2 id="career-percentage">
                             0%
-                        </strong>
+                        </h2>
 
-                        <span>Career readiness</span>
-
-                    </div>
-
-                    <div class="progress-track">
-                        <div
-                            class="progress-fill"
-                            id="dashboard-career-bar"
-                            style="width:0%">
-                        </div>
-                    </div>
-
-                    <p class="muted">
-                        Build programming, DSA, CS fundamentals,
-                        projects and career skills.
-                    </p>
-
-                </div>
-
-
-                <!-- UPCOMING EVENTS -->
-
-                <div class="card">
-
-                    <div class="card-header">
-
-                        <div>
-                            <span class="eyebrow">SCHEDULE</span>
-                            <h2>Upcoming</h2>
-                        </div>
-
-                        <button
-                            class="text-btn"
-                            data-goto="calendar">
-                            Calendar
-                        </button>
+                        <p>
+                            Complete the checklist as you learn and build.
+                        </p>
 
                     </div>
 
-                    <div id="dashboard-events">
+                    <div class="career-circle">
+                        <div id="career-circle-number">0%</div>
                     </div>
 
                 </div>
 
 
-                <!-- WEEKLY OVERVIEW -->
-
-                <div class="card large-card">
-
-                    <div class="card-header">
-
-                        <div>
-                            <span class="eyebrow">CONSISTENCY</span>
-                            <h2>Weekly Overview</h2>
-                        </div>
-
-                    </div>
-
-                    <div class="weekly-bars" id="weekly-bars">
-                    </div>
-
+                <div id="career-checklist" class="career-sections">
                 </div>
 
-            </div>
+            </section>
 
 
-            <!-- QUICK ACTIONS -->
-
-            <div class="card quick-actions-card">
-
-                <div class="card-header">
-
-                    <div>
-                        <span class="eyebrow">SHORTCUTS</span>
-                        <h2>Quick Actions</h2>
-                    </div>
-
-                </div>
-
-                <div class="quick-actions">
-
-                    <button data-goto="goals">
-                        <span>🎯</span>
-                        Add Goal
-                    </button>
-
-                    <button data-goto="habits">
-                        <span>🔥</span>
-                        Add Habit
-                    </button>
-
-                    <button data-goto="student">
-                        <span>📚</span>
-                        Study
-                    </button>
-
-                    <button data-goto="projects">
-                        <span>🚀</span>
-                        New Project
-                    </button>
-
-                    <button data-goto="calendar">
-                        <span>📅</span>
-                        Add Event
-                    </button>
-
-                    <button data-goto="career">
-                        <span>💻</span>
-                        Career Checklist
-                    </button>
-
-                </div>
-
-            </div>
-
-
-        </section>
-
-
-        <!-- =====================================================
-             GOALS
-        ====================================================== -->
-
-        <section class="page" id="goals">
-
-            <div class="page-header">
-
-                <div>
-                    <span class="eyebrow">DIRECTION & PURPOSE</span>
-                    <h1>Goals</h1>
-                    <p>Turn big ambitions into measurable actions.</p>
-                </div>
-
-                <button class="primary-btn" id="open-goal-form">
-                    + Create Goal
-                </button>
-
-            </div>
-
-
-            <div class="stats-grid">
-
-                <div class="stat-card">
-                    <div class="stat-icon purple">🎯</div>
-                    <div>
-                        <span>Total Goals</span>
-                        <strong id="goal-total">0</strong>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-icon blue">🚀</div>
-                    <div>
-                        <span>In Progress</span>
-                        <strong id="goal-progress-count">0</strong>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-icon green">🏆</div>
-                    <div>
-                        <span>Completed</span>
-                        <strong id="goal-completed-count">0</strong>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-icon orange">📊</div>
-                    <div>
-                        <span>Average Progress</span>
-                        <strong id="goal-average-progress">0%</strong>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="form-card hidden" id="goal-form-card">
-
-                <div class="card-header">
-                    <div>
-                        <span class="eyebrow">NEW GOAL</span>
-                        <h2>Create a meaningful goal</h2>
-                    </div>
-                </div>
-
-                <form id="goal-form">
-
-                    <div class="form-grid">
-
-                        <div class="input-group full">
-                            <label>Goal name</label>
-                            <input
-                                type="text"
-                                id="goal-name"
-                                placeholder="Example: Build my portfolio website"
-                                required>
-                        </div>
-
-                        <div class="input-group">
-                            <label>Category</label>
-
-                            <select id="goal-category">
-                                <option>Career</option>
-                                <option>Education</option>
-                                <option>Health</option>
-                                <option>Personal</option>
-                                <option>Finance</option>
-                                <option>Japan</option>
-                                <option>Projects</option>
-                            </select>
-                        </div>
-
-                        <div class="input-group">
-                            <label>Priority</label>
-
-                            <select id="goal-priority">
-                                <option>High</option>
-                                <option selected>Medium</option>
-                                <option>Low</option>
-                            </select>
-                        </div>
-
-                        <div class="input-group">
-                            <label>Deadline</label>
-                            <input type="date" id="goal-deadline">
-                        </div>
-
-                        <div class="input-group">
-                            <label>Why does this matter?</label>
-                            <input
-                                type="text"
-                                id="goal-why"
-                                placeholder="Why is this important to you?">
-                        </div>
-
-                        <div class="input-group full">
-                            <label>Next action</label>
-                            <input
-                                type="text"
-                                id="goal-next-action"
-                                placeholder="What is the next physical action?">
-                        </div>
-
-                    </div>
-
-                    <div class="form-actions">
-
-                        <button
-                            type="button"
-                            class="secondary-btn"
-                            id="cancel-goal-form">
-                            Cancel
-                        </button>
-
-                        <button type="submit" class="primary-btn">
-                            Create Goal
-                        </button>
-
-                    </div>
-
-                </form>
-
-            </div>
-
-
-            <div class="section-title">
-                <h2>Your Goals</h2>
-                <span id="goals-count-label">0 goals</span>
-            </div>
-
-            <div id="goals-list" class="goals-grid">
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             HABITS
-        ====================================================== -->
-
-        <section class="page" id="habits">
-
-            <div class="page-header">
-
-                <div>
-                    <span class="eyebrow">DAILY SYSTEM</span>
-                    <h1>Habit Tracker</h1>
-                    <p>Small actions repeated consistently create big changes.</p>
-                </div>
-
-                <button class="primary-btn" id="open-habit-form">
-                    + Create Habit
-                </button>
-
-            </div>
-
-
-            <div class="stats-grid">
-
-                <div class="stat-card">
-                    <div class="stat-icon orange">🔥</div>
-                    <div>
-                        <span>Total Habits</span>
-                        <strong id="habit-total">0</strong>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-icon green">✓</div>
-                    <div>
-                        <span>Today's Completion</span>
-                        <strong id="habit-today">0%</strong>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-icon purple">🏆</div>
-                    <div>
-                        <span>Best Streak</span>
-                        <strong id="best-streak">0</strong>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-icon blue">📅</div>
-                    <div>
-                        <span>Weekly Consistency</span>
-                        <strong id="habit-weekly">0%</strong>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="form-card hidden" id="habit-form-card">
-
-                <div class="card-header">
-
-                    <div>
-                        <span class="eyebrow">NEW HABIT</span>
-                        <h2>Build a better routine</h2>
-                    </div>
-
-                </div>
-
-                <form id="habit-form">
-
-                    <div class="form-grid">
-
-                        <div class="input-group full">
-                            <label>Habit name</label>
-
-                            <input
-                                type="text"
-                                id="habit-name"
-                                placeholder="Example: Study DSA for 45 minutes"
-                                required>
-                        </div>
-
-                        <div class="input-group">
-                            <label>Category</label>
-
-                            <select id="habit-category">
-                                <option>Study</option>
-                                <option>Health</option>
-                                <option>Career</option>
-                                <option>Productivity</option>
-                                <option>Mindset</option>
-                                <option>Personal</option>
-                            </select>
-                        </div>
-
-                        <div class="input-group">
-                            <label>Target</label>
-
-                            <select id="habit-target">
-                                <option value="daily">Every day</option>
-                                <option value="weekdays">Weekdays</option>
-                                <option value="3">3 days/week</option>
-                                <option value="5">5 days/week</option>
-                            </select>
-                        </div>
-
-                    </div>
-
-                    <div class="form-actions">
-
-                        <button
-                            type="button"
-                            class="secondary-btn"
-                            id="cancel-habit-form">
-                            Cancel
-                        </button>
-
-                        <button type="submit" class="primary-btn">
-                            Create Habit
-                        </button>
-
-                    </div>
-
-                </form>
-
-            </div>
-
-
-            <div class="habit-table-wrapper">
-
-                <div id="habits-list">
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             STUDENT
-        ====================================================== -->
-
-        <section class="page" id="student">
-
-            <div class="page-header">
-
-                <div>
-                    <span class="eyebrow">STUDENT OS</span>
-                    <h1>Student Center</h1>
-                    <p>Manage study, assignments, subjects and exams.</p>
-                </div>
-
-                <button class="primary-btn" id="open-study-form">
-                    + Add Study Session
-                </button>
-
-            </div>
-
-
-            <div class="stats-grid">
-
-                <div class="stat-card">
-                    <div class="stat-icon blue">📚</div>
-                    <div>
-                        <span>Subjects</span>
-                        <strong id="subject-count">0</strong>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-icon purple">⏱️</div>
-                    <div>
-                        <span>Study Hours</span>
-                        <strong id="study-hours">0h</strong>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-icon orange">📝</div>
-                    <div>
-                        <span>Assignments</span>
-                        <strong id="assignment-count">0</strong>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-icon green">🎓</div>
-                    <div>
-                        <span>Academic Progress</span>
-                        <strong id="academic-progress">0%</strong>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="student-grid">
-
-                <div class="card">
-
-                    <div class="card-header">
-
-                        <div>
-                            <span class="eyebrow">ACADEMICS</span>
-                            <h2>Subjects</h2>
-                        </div>
-
-                        <button
-                            class="text-btn"
-                            id="add-subject-btn">
-                            + Add
-                        </button>
-
-                    </div>
-
-                    <div id="subjects-list">
-                    </div>
-
-                </div>
-
-
-                <div class="card">
-
-                    <div class="card-header">
-
-                        <div>
-                            <span class="eyebrow">DEADLINES</span>
-                            <h2>Assignments</h2>
-                        </div>
-
-                        <button
-                            class="text-btn"
-                            id="add-assignment-btn">
-                            + Add
-                        </button>
-
-                    </div>
-
-                    <div id="assignments-list">
-                    </div>
-
-                </div>
-
-
-                <div class="card large-card">
-
-                    <div class="card-header">
-
-                        <div>
-                            <span class="eyebrow">STUDY LOG</span>
-                            <h2>Study Sessions</h2>
-                        </div>
-
-                    </div>
-
-                    <div id="study-sessions-list">
-                    </div>
-
-                </div>
-
-
-                <div class="card">
-
-                    <div class="card-header">
-
-                        <div>
-                            <span class="eyebrow">EXAM PREPARATION</span>
-                            <h2>Exams</h2>
-                        </div>
-
-                        <button
-                            class="text-btn"
-                            id="add-exam-btn">
-                            + Add
-                        </button>
-
-                    </div>
-
-                    <div id="exams-list">
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             IT CAREER
-        ====================================================== -->
-
-        <section class="page" id="career">
-
-            <div class="page-header">
-
-                <div>
-                    <span class="eyebrow">CAREER DEVELOPMENT</span>
-                    <h1>IT Career Builder</h1>
-                    <p>
-                        Build the skills that turn an IT student into a
-                        strong developer candidate.
-                    </p>
-                </div>
-
-            </div>
-
-
-            <div class="career-hero card">
-
-                <div>
-
-                    <span class="eyebrow">
-                        YOUR CAREER READINESS
-                    </span>
-
-                    <h2 id="career-percentage">
-                        0%
-                    </h2>
-
-                    <p>
-                        Complete the checklist as you learn and build.
-                    </p>
-
-                </div>
-
-                <div class="career-circle">
-                    <div id="career-circle-number">0%</div>
-                </div>
-
-            </div>
-
-
-            <div id="career-checklist" class="career-sections">
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
+            <!-- =====================================================
              ROADMAPS
         ====================================================== -->
 
-        <section class="page" id="roadmaps">
+            <section class="page" id="roadmaps">
 
-            <div class="page-header">
+                <div class="page-header">
 
-                <div>
-                    <span class="eyebrow">SKILL PATHS</span>
-                    <h1>Roadmaps</h1>
-                    <p>Follow structured paths instead of learning randomly.</p>
+                    <div>
+                        <span class="eyebrow">SKILL PATHS</span>
+                        <h1>Roadmaps</h1>
+                        <p>Follow structured paths instead of learning randomly.</p>
+                    </div>
+
                 </div>
 
-            </div>
+
+                <div id="roadmaps-list" class="roadmaps-grid">
+                </div>
+
+            </section>
 
 
-            <div id="roadmaps-list" class="roadmaps-grid">
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
+            <!-- =====================================================
              JAPAN
         ====================================================== -->
 
-        <section class="page" id="japan">
+            <section class="page" id="japan">
 
-            <div class="page-header">
+                <div class="page-header">
 
-                <div>
-                    <span class="eyebrow">LONG TERM VISION</span>
-                    <h1>🇯🇵 Japan Career Dream</h1>
-                    <p>
-                        Turn a distant dream into measurable preparation.
-                    </p>
-                </div>
-
-            </div>
-
-
-            <div class="japan-hero card">
-
-                <div class="japan-hero-content">
-
-                    <span class="eyebrow">
-                        DESTINATION
-                    </span>
-
-                    <h2>Build skills. Build experience. Build options.</h2>
-
-                    <p>
-                        Track the technical, language, career and
-                        financial preparation required for your future plans.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="japan-grid">
-
-                <div class="card">
-
-                    <div class="card-header">
-                        <h2>🇯🇵 Japan Preparation</h2>
-                    </div>
-
-                    <div id="japan-checklist">
+                    <div>
+                        <span class="eyebrow">LONG TERM VISION</span>
+                        <h1>🇯🇵 Japan Career Dream</h1>
+                        <p>
+                            Turn a distant dream into measurable preparation.
+                        </p>
                     </div>
 
                 </div>
 
 
-                <div class="card">
+                <div class="japan-hero card">
 
-                    <div class="card-header">
-                        <h2>🎯 Long-Term Milestones</h2>
+                    <div class="japan-hero-content">
+
+                        <span class="eyebrow">
+                            DESTINATION
+                        </span>
+
+                        <h2>Build skills. Build experience. Build options.</h2>
+
+                        <p>
+                            Track the technical, language, career and
+                            financial preparation required for your future plans.
+                        </p>
+
                     </div>
 
-                    <div class="milestone-list">
+                </div>
 
-                        <div class="milestone">
-                            <span>01</span>
-                            <div>
-                                <strong>Build strong IT skills</strong>
-                                <small>Programming + CS fundamentals</small>
-                            </div>
+
+                <div class="japan-grid">
+
+                    <div class="card">
+
+                        <div class="card-header">
+                            <h2>🇯🇵 Japan Preparation</h2>
                         </div>
 
-                        <div class="milestone">
-                            <span>02</span>
-                            <div>
-                                <strong>Create strong projects</strong>
-                                <small>Portfolio + real-world work</small>
-                            </div>
+                        <div id="japan-checklist">
                         </div>
 
-                        <div class="milestone">
-                            <span>03</span>
-                            <div>
-                                <strong>Learn Japanese</strong>
-                                <small>Build language ability gradually</small>
-                            </div>
+                    </div>
+
+
+                    <div class="card">
+
+                        <div class="card-header">
+                            <h2>🎯 Long-Term Milestones</h2>
                         </div>
 
-                        <div class="milestone">
-                            <span>04</span>
-                            <div>
-                                <strong>Gain experience</strong>
-                                <small>Internships + teamwork</small>
-                            </div>
-                        </div>
+                        <div class="milestone-list">
 
-                        <div class="milestone">
-                            <span>05</span>
-                            <div>
-                                <strong>Prepare applications</strong>
-                                <small>Resume + interviews + opportunities</small>
+                            <div class="milestone">
+                                <span>01</span>
+                                <div>
+                                    <strong>Build strong IT skills</strong>
+                                    <small>Programming + CS fundamentals</small>
+                                </div>
                             </div>
+
+                            <div class="milestone">
+                                <span>02</span>
+                                <div>
+                                    <strong>Create strong projects</strong>
+                                    <small>Portfolio + real-world work</small>
+                                </div>
+                            </div>
+
+                            <div class="milestone">
+                                <span>03</span>
+                                <div>
+                                    <strong>Learn Japanese</strong>
+                                    <small>Build language ability gradually</small>
+                                </div>
+                            </div>
+
+                            <div class="milestone">
+                                <span>04</span>
+                                <div>
+                                    <strong>Gain experience</strong>
+                                    <small>Internships + teamwork</small>
+                                </div>
+                            </div>
+
+                            <div class="milestone">
+                                <span>05</span>
+                                <div>
+                                    <strong>Prepare applications</strong>
+                                    <small>Resume + interviews + opportunities</small>
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
 
                 </div>
 
-            </div>
-
-        </section>
+            </section>
 
 
-        <!-- =====================================================
+            <!-- =====================================================
              LEARNING
         ====================================================== -->
 
-        <section class="page" id="learning">
+            <section class="page" id="learning">
 
-            <div class="page-header">
-
-                <div>
-                    <span class="eyebrow">KNOWLEDGE SYSTEM</span>
-                    <h1>Learning Hub</h1>
-                    <p>Track what you're learning and what you've mastered.</p>
-                </div>
-
-                <button class="primary-btn" id="add-learning-btn">
-                    + Add Topic
-                </button>
-
-            </div>
-
-
-            <div class="learning-grid">
-
-                <div class="card learning-card">
-
-                    <span class="learning-icon">💻</span>
-
-                    <h2>Programming</h2>
-
-                    <p>
-                        Languages, syntax, problem solving and coding practice.
-                    </p>
-
-                    <div class="progress-track">
-                        <div
-                            class="progress-fill"
-                            id="learning-programming-bar"
-                            style="width:0%">
-                        </div>
-                    </div>
-
-                    <strong id="learning-programming-percent">
-                        0%
-                    </strong>
-
-                </div>
-
-
-                <div class="card learning-card">
-
-                    <span class="learning-icon">🧩</span>
-
-                    <h2>DSA</h2>
-
-                    <p>
-                        Data structures, algorithms and interview preparation.
-                    </p>
-
-                    <div class="progress-track">
-                        <div
-                            class="progress-fill"
-                            id="learning-dsa-bar"
-                            style="width:0%">
-                        </div>
-                    </div>
-
-                    <strong id="learning-dsa-percent">
-                        0%
-                    </strong>
-
-                </div>
-
-
-                <div class="card learning-card">
-
-                    <span class="learning-icon">🌐</span>
-
-                    <h2>Web Development</h2>
-
-                    <p>
-                        Frontend, backend, APIs, databases and deployment.
-                    </p>
-
-                    <div class="progress-track">
-                        <div
-                            class="progress-fill"
-                            id="learning-web-bar"
-                            style="width:0%">
-                        </div>
-                    </div>
-
-                    <strong id="learning-web-percent">
-                        0%
-                    </strong>
-
-                </div>
-
-
-                <div class="card learning-card">
-
-                    <span class="learning-icon">🧠</span>
-
-                    <h2>CS Fundamentals</h2>
-
-                    <p>
-                        OOP, DBMS, OS, networks and software engineering.
-                    </p>
-
-                    <div class="progress-track">
-                        <div
-                            class="progress-fill"
-                            id="learning-cs-bar"
-                            style="width:0%">
-                        </div>
-                    </div>
-
-                    <strong id="learning-cs-percent">
-                        0%
-                    </strong>
-
-                </div>
-
-            </div>
-
-
-            <div class="card">
-
-                <div class="card-header">
+                <div class="page-header">
 
                     <div>
-                        <span class="eyebrow">YOUR KNOWLEDGE</span>
-                        <h2>Learning Topics</h2>
+                        <span class="eyebrow">KNOWLEDGE SYSTEM</span>
+                        <h1>Learning Hub</h1>
+                        <p>Track what you're learning and what you've mastered.</p>
                     </div>
 
-                </div>
-
-                <div id="learning-topics">
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             PROJECTS
-        ====================================================== -->
-
-        <section class="page" id="projects">
-
-            <div class="page-header">
-
-                <div>
-                    <span class="eyebrow">BUILD IN PUBLIC</span>
-                    <h1>Projects</h1>
-                    <p>
-                        Projects prove that you can turn knowledge into software.
-                    </p>
-                </div>
-
-                <button class="primary-btn" id="add-project-btn">
-                    + New Project
-                </button>
-
-            </div>
-
-
-            <div class="project-stats stats-grid">
-
-                <div class="stat-card">
-                    <div class="stat-icon purple">🚀</div>
-                    <div>
-                        <span>Total Projects</span>
-                        <strong id="project-total">0</strong>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-icon blue">⚙️</div>
-                    <div>
-                        <span>In Progress</span>
-                        <strong id="project-active">0</strong>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-icon green">🏆</div>
-                    <div>
-                        <span>Completed</span>
-                        <strong id="project-completed">0</strong>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div id="projects-list" class="projects-grid">
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             CALENDAR
-        ====================================================== -->
-
-        <section class="page" id="calendar">
-
-            <div class="page-header">
-
-                <div>
-                    <span class="eyebrow">TIME MANAGEMENT</span>
-                    <h1>Calendar</h1>
-                    <p>Add events, deadlines, exams and important dates.</p>
-                </div>
-
-                <button class="primary-btn" id="add-event-btn">
-                    + Add Event
-                </button>
-
-            </div>
-
-
-            <div class="calendar-layout">
-
-                <div class="card calendar-card">
-
-                    <div class="calendar-top">
-
-                        <button class="icon-btn" id="previous-month">
-                            ‹
-                        </button>
-
-                        <h2 id="calendar-month">
-                            September 2026
-                        </h2>
-
-                        <button class="icon-btn" id="next-month">
-                            ›
-                        </button>
-
-                    </div>
-
-
-                    <div class="calendar-weekdays">
-
-                        <span>Sun</span>
-                        <span>Mon</span>
-                        <span>Tue</span>
-                        <span>Wed</span>
-                        <span>Thu</span>
-                        <span>Fri</span>
-                        <span>Sat</span>
-
-                    </div>
-
-
-                    <div id="calendar-days" class="calendar-days">
-                    </div>
-
-                </div>
-
-
-                <div class="card">
-
-                    <div class="card-header">
-
-                        <div>
-                            <span class="eyebrow">SCHEDULE</span>
-                            <h2>Upcoming Events</h2>
-                        </div>
-
-                    </div>
-
-                    <div id="events-list">
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             PROGRESS
-        ====================================================== -->
-
-        <section class="page" id="progress">
-
-            <div class="page-header">
-
-                <div>
-                    <span class="eyebrow">SELF REVIEW</span>
-                    <h1>Progress</h1>
-                    <p>See how your different systems are developing.</p>
-                </div>
-
-            </div>
-
-
-            <div class="progress-overview-grid">
-
-                <div class="card progress-big-card">
-
-                    <span class="eyebrow">
-                        OVERALL LIFE OS
-                    </span>
-
-                    <strong id="overall-progress">
-                        0%
-                    </strong>
-
-                    <div class="progress-track large">
-                        <div
-                            class="progress-fill"
-                            id="overall-progress-bar"
-                            style="width:0%">
-                        </div>
-                    </div>
-
-                    <p class="muted">
-                        A combined view of goals, habits,
-                        learning, projects and career preparation.
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <span class="eyebrow">
-                        GOALS
-                    </span>
-
-                    <h2 id="progress-goals">
-                        0%
-                    </h2>
-
-                    <div class="progress-track">
-                        <div
-                            class="progress-fill"
-                            id="progress-goals-bar"
-                            style="width:0%">
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <div class="card">
-
-                    <span class="eyebrow">
-                        HABITS
-                    </span>
-
-                    <h2 id="progress-habits">
-                        0%
-                    </h2>
-
-                    <div class="progress-track">
-                        <div
-                            class="progress-fill"
-                            id="progress-habits-bar"
-                            style="width:0%">
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <div class="card">
-
-                    <span class="eyebrow">
-                        PROJECTS
-                    </span>
-
-                    <h2 id="progress-projects">
-                        0%
-                    </h2>
-
-                    <div class="progress-track">
-                        <div
-                            class="progress-fill"
-                            id="progress-projects-bar"
-                            style="width:0%">
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="card">
-
-                <div class="card-header">
-                    <div>
-                        <span class="eyebrow">INSIGHTS</span>
-                        <h2>Your Progress Breakdown</h2>
-                    </div>
-                </div>
-
-                <div id="progress-breakdown">
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             ACHIEVEMENTS
-        ====================================================== -->
-
-        <section class="page" id="achievements">
-
-            <div class="page-header">
-
-                <div>
-                    <span class="eyebrow">MILESTONES</span>
-                    <h1>Achievements</h1>
-                    <p>Earn achievements by actually using your system.</p>
-                </div>
-
-            </div>
-
-
-            <div class="achievement-summary card">
-
-                <div>
-                    <span class="eyebrow">UNLOCKED</span>
-
-                    <strong id="achievement-count">
-                        0 / 0
-                    </strong>
-
-                    <p>
-                        Keep building your consistency.
-                    </p>
-                </div>
-
-                <div class="achievement-trophy">
-                    🏆
-                </div>
-
-            </div>
-
-
-            <div id="achievements-list" class="achievements-grid">
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             SETTINGS
-        ====================================================== -->
-
-        <section class="page" id="settings">
-
-            <div class="page-header">
-
-                <div>
-                    <span class="eyebrow">CONTROL CENTER</span>
-                    <h1>Settings</h1>
-                    <p>Customize your Life OS.</p>
-                </div>
-
-            </div>
-
-
-            <div class="settings-grid">
-
-                <div class="card">
-
-                    <div class="card-header">
-                        <h2>Profile</h2>
-                    </div>
-
-                    <div class="input-group">
-                        <label>Your name</label>
-
-                        <input
-                            type="text"
-                            id="settings-name"
-                            value="Yash">
-                    </div>
-
-                    <div class="input-group">
-                        <label>Current role</label>
-
-                        <input
-                            type="text"
-                            id="settings-role"
-                            value="IT Student">
-                    </div>
-
-                    <button
-                        class="primary-btn"
-                        id="save-settings">
-                        Save Profile
+                    <button class="primary-btn" id="add-learning-btn">
+                        + Add Topic
                     </button>
 
                 </div>
 
 
-                <div class="card">
+                <div class="learning-grid">
 
-                    <div class="card-header">
-                        <h2>Data</h2>
+                    <div class="card learning-card">
+
+                        <span class="learning-icon">💻</span>
+
+                        <h2>Programming</h2>
+
+                        <p>
+                            Languages, syntax, problem solving and coding practice.
+                        </p>
+
+                        <div class="progress-track">
+                            <div class="progress-fill" id="learning-programming-bar" style="width:0%">
+                            </div>
+                        </div>
+
+                        <strong id="learning-programming-percent">
+                            0%
+                        </strong>
+
                     </div>
 
-                    <p class="muted">
-                        Your data is stored locally in your browser.
-                    </p>
 
-                    <div class="settings-actions">
+                    <div class="card learning-card">
 
-                        <button
-                            class="secondary-btn"
-                            id="export-data">
-                            Export Data
-                        </button>
+                        <span class="learning-icon">🧩</span>
 
-                        <button
-                            class="danger-btn"
-                            id="reset-data">
-                            Reset All Data
-                        </button>
+                        <h2>DSA</h2>
+
+                        <p>
+                            Data structures, algorithms and interview preparation.
+                        </p>
+
+                        <div class="progress-track">
+                            <div class="progress-fill" id="learning-dsa-bar" style="width:0%">
+                            </div>
+                        </div>
+
+                        <strong id="learning-dsa-percent">
+                            0%
+                        </strong>
+
+                    </div>
+
+
+                    <div class="card learning-card">
+
+                        <span class="learning-icon">🌐</span>
+
+                        <h2>Web Development</h2>
+
+                        <p>
+                            Frontend, backend, APIs, databases and deployment.
+                        </p>
+
+                        <div class="progress-track">
+                            <div class="progress-fill" id="learning-web-bar" style="width:0%">
+                            </div>
+                        </div>
+
+                        <strong id="learning-web-percent">
+                            0%
+                        </strong>
+
+                    </div>
+
+
+                    <div class="card learning-card">
+
+                        <span class="learning-icon">🧠</span>
+
+                        <h2>CS Fundamentals</h2>
+
+                        <p>
+                            OOP, DBMS, OS, networks and software engineering.
+                        </p>
+
+                        <div class="progress-track">
+                            <div class="progress-fill" id="learning-cs-bar" style="width:0%">
+                            </div>
+                        </div>
+
+                        <strong id="learning-cs-percent">
+                            0%
+                        </strong>
 
                     </div>
 
@@ -1646,66 +1191,454 @@
                 <div class="card">
 
                     <div class="card-header">
-                        <h2>Life OS Philosophy</h2>
+
+                        <div>
+                            <span class="eyebrow">YOUR KNOWLEDGE</span>
+                            <h2>Learning Topics</h2>
+                        </div>
+
                     </div>
 
-                    <div class="philosophy-list">
+                    <div id="learning-topics">
+                    </div>
 
+                </div>
+
+            </section>
+
+
+            <!-- =====================================================
+             PROJECTS
+        ====================================================== -->
+
+            <section class="page" id="projects">
+
+                <div class="page-header">
+
+                    <div>
+                        <span class="eyebrow">BUILD IN PUBLIC</span>
+                        <h1>Projects</h1>
+                        <p>
+                            Projects prove that you can turn knowledge into software.
+                        </p>
+                    </div>
+
+                    <button class="primary-btn" id="add-project-btn">
+                        + New Project
+                    </button>
+
+                </div>
+
+
+                <div class="project-stats stats-grid">
+
+                    <div class="stat-card">
+                        <div class="stat-icon purple">🚀</div>
                         <div>
-                            <span>01</span>
-                            <p>Direction before speed.</p>
+                            <span>Total Projects</span>
+                            <strong id="project-total">0</strong>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon blue">⚙️</div>
+                        <div>
+                            <span>In Progress</span>
+                            <strong id="project-active">0</strong>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon green">🏆</div>
+                        <div>
+                            <span>Completed</span>
+                            <strong id="project-completed">0</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div id="projects-list" class="projects-grid">
+                </div>
+
+            </section>
+
+
+            <!-- =====================================================
+             CALENDAR
+        ====================================================== -->
+
+            <section class="page" id="calendar">
+
+                <div class="page-header">
+
+                    <div>
+                        <span class="eyebrow">TIME MANAGEMENT</span>
+                        <h1>Calendar</h1>
+                        <p>Add events, deadlines, exams and important dates.</p>
+                    </div>
+
+                    <button class="primary-btn" id="add-event-btn">
+                        + Add Event
+                    </button>
+
+                </div>
+
+
+                <div class="calendar-layout">
+
+                    <div class="card calendar-card">
+
+                        <div class="calendar-top">
+
+                            <button class="icon-btn" id="previous-month">
+                                ‹
+                            </button>
+
+                            <h2 id="calendar-month">
+                                September 2026
+                            </h2>
+
+                            <button class="icon-btn" id="next-month">
+                                ›
+                            </button>
+
                         </div>
 
-                        <div>
-                            <span>02</span>
-                            <p>Consistency beats motivation.</p>
+
+                        <div class="calendar-weekdays">
+
+                            <span>Sun</span>
+                            <span>Mon</span>
+                            <span>Tue</span>
+                            <span>Wed</span>
+                            <span>Thu</span>
+                            <span>Fri</span>
+                            <span>Sat</span>
+
                         </div>
 
-                        <div>
-                            <span>03</span>
-                            <p>Build more than you consume.</p>
+
+                        <div id="calendar-days" class="calendar-days">
                         </div>
 
-                        <div>
-                            <span>04</span>
-                            <p>Review. Improve. Repeat.</p>
+                    </div>
+
+
+                    <div class="card">
+
+                        <div class="card-header">
+
+                            <div>
+                                <span class="eyebrow">SCHEDULE</span>
+                                <h2>Upcoming Events</h2>
+                            </div>
+
+                        </div>
+
+                        <div id="events-list">
                         </div>
 
                     </div>
 
                 </div>
 
-            </div>
-
-        </section>
+            </section>
 
 
-    </main>
+            <!-- =====================================================
+             PROGRESS
+        ====================================================== -->
 
-</div>
+            <section class="page" id="progress">
+
+                <div class="page-header">
+
+                    <div>
+                        <span class="eyebrow">SELF REVIEW</span>
+                        <h1>Progress</h1>
+                        <p>See how your different systems are developing.</p>
+                    </div>
+
+                </div>
 
 
-<!-- =====================================================
+                <div class="progress-overview-grid">
+
+                    <div class="card progress-big-card">
+
+                        <span class="eyebrow">
+                            OVERALL LIFE OS
+                        </span>
+
+                        <strong id="overall-progress">
+                            0%
+                        </strong>
+
+                        <div class="progress-track large">
+                            <div class="progress-fill" id="overall-progress-bar" style="width:0%">
+                            </div>
+                        </div>
+
+                        <p class="muted">
+                            A combined view of goals, habits,
+                            learning, projects and career preparation.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <span class="eyebrow">
+                            GOALS
+                        </span>
+
+                        <h2 id="progress-goals">
+                            0%
+                        </h2>
+
+                        <div class="progress-track">
+                            <div class="progress-fill" id="progress-goals-bar" style="width:0%">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <span class="eyebrow">
+                            HABITS
+                        </span>
+
+                        <h2 id="progress-habits">
+                            0%
+                        </h2>
+
+                        <div class="progress-track">
+                            <div class="progress-fill" id="progress-habits-bar" style="width:0%">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <span class="eyebrow">
+                            PROJECTS
+                        </span>
+
+                        <h2 id="progress-projects">
+                            0%
+                        </h2>
+
+                        <div class="progress-track">
+                            <div class="progress-fill" id="progress-projects-bar" style="width:0%">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-header">
+                        <div>
+                            <span class="eyebrow">INSIGHTS</span>
+                            <h2>Your Progress Breakdown</h2>
+                        </div>
+                    </div>
+
+                    <div id="progress-breakdown">
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================================================
+             ACHIEVEMENTS
+        ====================================================== -->
+
+            <section class="page" id="achievements">
+
+                <div class="page-header">
+
+                    <div>
+                        <span class="eyebrow">MILESTONES</span>
+                        <h1>Achievements</h1>
+                        <p>Earn achievements by actually using your system.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="achievement-summary card">
+
+                    <div>
+                        <span class="eyebrow">UNLOCKED</span>
+
+                        <strong id="achievement-count">
+                            0 / 0
+                        </strong>
+
+                        <p>
+                            Keep building your consistency.
+                        </p>
+                    </div>
+
+                    <div class="achievement-trophy">
+                        🏆
+                    </div>
+
+                </div>
+
+
+                <div id="achievements-list" class="achievements-grid">
+                </div>
+
+            </section>
+
+
+            <!-- =====================================================
+             SETTINGS
+        ====================================================== -->
+
+            <section class="page" id="settings">
+
+                <div class="page-header">
+
+                    <div>
+                        <span class="eyebrow">CONTROL CENTER</span>
+                        <h1>Settings</h1>
+                        <p>Customize your Life OS.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="settings-grid">
+
+                    <div class="card">
+
+                        <div class="card-header">
+                            <h2>Profile</h2>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Your name</label>
+
+                            <input type="text" id="settings-name" value="Yash">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Current role</label>
+
+                            <input type="text" id="settings-role" value="IT Student">
+                        </div>
+
+                        <button class="primary-btn" id="save-settings">
+                            Save Profile
+                        </button>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <div class="card-header">
+                            <h2>Data</h2>
+                        </div>
+
+                        <p class="muted">
+                            Your data is stored locally in your browser.
+                        </p>
+
+                        <div class="settings-actions">
+
+                            <button class="secondary-btn" id="export-data">
+                                Export Data
+                            </button>
+
+                            <button class="danger-btn" id="reset-data">
+                                Reset All Data
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <div class="card-header">
+                            <h2>Life OS Philosophy</h2>
+                        </div>
+
+                        <div class="philosophy-list">
+
+                            <div>
+                                <span>01</span>
+                                <p>Direction before speed.</p>
+                            </div>
+
+                            <div>
+                                <span>02</span>
+                                <p>Consistency beats motivation.</p>
+                            </div>
+
+                            <div>
+                                <span>03</span>
+                                <p>Build more than you consume.</p>
+                            </div>
+
+                            <div>
+                                <span>04</span>
+                                <p>Review. Improve. Repeat.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <!-- =====================================================
      MODAL
 ====================================================== -->
 
-<div class="modal-overlay hidden" id="modal-overlay">
+    <div class="modal-overlay hidden" id="modal-overlay">
 
-    <div class="modal" id="modal">
+        <div class="modal" id="modal">
 
-        <button class="modal-close" id="modal-close">
-            ×
-        </button>
+            <button class="modal-close" id="modal-close">
+                ×
+            </button>
 
-        <div id="modal-content">
+            <div id="modal-content">
+            </div>
+
         </div>
 
     </div>
 
-</div>
 
-
-<script src="js/app.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
+
 </html>
